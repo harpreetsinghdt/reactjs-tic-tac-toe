@@ -351,3 +351,27 @@ ol {
     transform: scale(1);
   }
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  header h1 {
+    font-size: 25px;
+  }
+
+  #game-board button {
+    width: 4rem;
+    height: 4rem;
+    font-size: 3.5rem;
+  }
+
+  #players li {
+    display: inline;
+    width: 100%;
+    border: 1px solid transparent;
+  }
+
+  .player-name {
+    display: flex;
+    width: 5rem;
+  }
+}

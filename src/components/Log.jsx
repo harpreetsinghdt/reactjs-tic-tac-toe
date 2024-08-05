@@ -1,8 +1,8 @@
 import React from "react";
 
-const Log = ({ turns }) => {
+const Log = ({ turns, gradientStyle }) => {
   return (
-    <ol id="log">
+    <ol id="log" style={gradientStyle}>
       {turns.map((turn) => (
         <li key={`${turn.square.row}${turn.square.col}`}>
           {turn.player} selected {turn.square.row},{turn.square.row}

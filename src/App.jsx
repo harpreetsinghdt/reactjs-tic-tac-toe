@@ -55,7 +55,30 @@ const deriveGameBoard = (gameTurns) => {
   return gameBoard;
 };
 
+function getRandomColor() {
+  const letters = "0123456789ABCDEF";
+  let color = "#";
+  for (let i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
+
 function App() {
+  const [gradient, setGradient] = useState({
+    color1: getRandomColor(),
+    color2: getRandomColor(),
+  });
+
+  const gradientStyle = {
+    background: `linear-gradient(to right, ${gradient.color1}, ${gradient.color2})`,
+    // height: "100vh",
+    // display: "flex",
+    // justifyContent: "center",
+    // alignItems: "center",
+    // flexDirection: "column",
+  };
+
   const [players, setPlayers] = useState(PLAYERS);
   const [gameTurns, setGameTurns] = useState([]);
   const activePlayer = deriveActivePlayer(gameTurns);
@@ -63,6 +86,11 @@ function App() {
   const winner = deriveWinner(gameBoard, players);
   const hasDraw = gameTurns.length === 9 && !winner;
   const handleClickSquare = (rowIndex, colIndex) => {
+    setGradient({
+      color1: getRandomColor(),
+      color2: getRandomColor(),
+    });
+
     setGameTurns((prev) => {
       let current = deriveActivePlayer(prev);
       if (prev.length > 0 && prev[0].player === "X") {
@@ -116,7 +144,7 @@ function App() {
           )}
           <GameBoard onClickSquare={handleClickSquare} board={gameBoard} />
         </div>
-        <Log turns={gameTurns} />
+        <Log turns={gameTurns} gradientStyle={gradientStyle} />
       </main>
     </>
   );

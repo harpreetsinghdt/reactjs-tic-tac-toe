@@ -7,8 +7,8 @@ The ReactJS Tic-Tac-Toe project was aimed at creating a user-friendly game appli
 ### Technical Skills Acquired
 
 1. **ReactJS**: Improved my understanding of React components, state management, and hooks. Learned how to structure a React application for scalability. (https://react.dev/learn)
-2. **Git and GitHub**: Enhanced my skills in version control, including branching, merging, and resolving conflicts. Learned how to effectively use GitHub for project collaboration and remote repository management. (https://github.com/harpreetsinghdt/reactjs-investment-calculator)
-3. **Netlify Deployment**: Gained experience in deploying a React application on Netlify, including handling environment variables and configuring custom domains. (https://reactjs-investment-calculator.vercel.app/)
+2. **Git and GitHub**: Enhanced my skills in version control, including branching, merging, and resolving conflicts. Learned how to effectively use GitHub for project collaboration and remote repository management. (https://github.com/harpreetsinghdt/reactjs-tic-tac-toe)
+3. **Netlify Deployment**: Gained experience in deploying a React application on Netlify, including handling environment variables and configuring custom domains. (https://tic-tac-toe-harp.netlify.app/)
 
 ### Challenges and Solutions
 

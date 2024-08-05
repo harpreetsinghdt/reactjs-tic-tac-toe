@@ -121,7 +121,7 @@ function App() {
     <>
       <header>
         {/* <img src="logo.jpg" alt="Tic tac toe game board" /> */}
-        <h1>Tic Tac Toe Game</h1>
+        <h1>Tic Tac Toe Harp</h1>
       </header>
       <main>
         <div id="game-container">

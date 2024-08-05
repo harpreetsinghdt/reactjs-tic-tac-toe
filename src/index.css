@@ -365,13 +365,16 @@ ol {
   }
 
   #players li {
-    display: inline;
+    display: block;
     width: 100%;
     border: 1px solid transparent;
   }
 
   .player-name {
-    display: flex;
+    display: contents;
     width: 5rem;
+  }
+  #players {
+    display: inline;
   }
 }
